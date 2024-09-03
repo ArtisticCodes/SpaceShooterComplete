@@ -21,7 +21,7 @@ clock = pygame.time.Clock()
 FPS = 60
 
 # Player settings
-#Student will remove numbers from quotes
+#Student will remove quotes from numbers
 player_width = 90
 player_height = 100
 
@@ -74,12 +74,12 @@ def display_score(score):
 def game_loop():
     global player_x, bullets, aliens,score
 
-    #student will remove True from quotes
+    #student will remove quotes from True
 
-    running = 'True'
+    running = True
     frame_count = 0
 
-    while running:
+    while running==True:
         screen.blit(background_img, (0, 0))  # Draw background image
         
         for event in pygame.event.get():
